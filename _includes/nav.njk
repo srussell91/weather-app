@@ -1,0 +1,16 @@
+<nav id="navigation">
+  {% set navPages = collections.all | eleventyNavigation %}
+  
+  <div class="columns is-centered">
+
+    {% for entry in navPages %}
+      <div class="column is-narrow is-offset-one-quarter has-text-centered mt-4">
+        <a href="{{ entry.url | url }}" 
+          class="{% if entry.url == page.url %} has-text-weight-bold {% endif %}">
+          {{ entry.title }}
+        </a>
+      </div>
+    {% endfor %}
+
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+/*.container {
+  display: grid;
+  grid-template-columns: 25% 68% 5%;
+  grid-gap: 1%;
+}
+
+#navigation {
+  grid-column-start: 1;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 200%;
+  padding-bottom: 50px;
+}
+
+#maincontent {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 70% 27%;
+  grid-gap: 3%;
+}
+
+#primary {
+  grid-column-start: 1;
+}
+
+#secondary {
+  grid-column-start: 2;
+}
+
+#footer {
+  grid-column-start: 2;
+}
